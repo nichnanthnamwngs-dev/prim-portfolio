@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio ของ Nichanan Namwong นักศึกษาวิศวกรรมคอมพิวเตอร์ที่กำลังมองหาโอกาสฝึกงานด้าน Full Stack, AI, Frontend และ UX/UI">
+  <meta name="theme-color" content="#FFF0F5">
+  <title>Nichanan Namwong — Student Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700&amp;family=Noto+Sans+Thai:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
+
+  <div class="animated-wallpaper" aria-hidden="true">
+    <div class="wallpaper-grid"></div>
+    <div class="wallpaper-orb wallpaper-orb-a"></div>
+    <div class="wallpaper-orb wallpaper-orb-b"></div>
+    <div class="wallpaper-orb wallpaper-orb-c"></div>
+    <div class="wallpaper-ribbon"></div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="กลับไปด้านบน">
+      <span class="brand-mark">PN</span>
+      <span class="brand-name" data-i18n="brandName">พริ้ม นิชนันท์</span>
+    </a>
+    <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="siteNav">
+      <span class="sr-only">เปิดเมนู</span>
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav" aria-label="เมนูหลัก">
+      <a href="#about" data-i18n="navAbout">เกี่ยวกับฉัน</a>
+      <a href="#education" data-i18n="navEducation">การศึกษา</a>
+      <a href="#skills" data-i18n="navSkills">ทักษะ</a>
+      <a href="#certificates" data-i18n="navCertificates">ใบรับรอง</a>
+      <a href="#projects" data-i18n="navProjects">ผลงาน</a>
+      <a class="nav-cta" href="#contact" data-i18n="navContact">ติดต่อ</a>
+    </nav>
+    <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch to English" aria-pressed="false">
+      <span class="language-current">TH</span><span aria-hidden="true">/</span><span class="language-next">EN</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <p class="eyebrow" data-reveal data-i18n="heroEyebrow">นักศึกษาวิศวกรรมคอมพิวเตอร์ · พร้อมฝึกงาน</p>
+        <h1 id="heroTitle" data-reveal><span data-i18n="heroFirstName">พริ้ม</span><br><span data-i18n="heroLastName">นิชนันท์.</span></h1>
+        <div class="role-line" data-reveal>
+          <span class="role-prefix" data-i18n="rolePrefix">สนใจทำงานด้าน</span>
+          <span class="role-text" id="roleTypewriter" aria-hidden="true">Full Stack Developer</span>
+          <span class="sr-only">Full Stack Developer, AI Developer, Frontend Developer และ UX/UI Designer</span>
+        </div>
+        <p class="hero-intro" data-reveal>
+          <span data-i18n="heroIntro">พัฒนาเว็บและผลิตภัณฑ์ดิจิทัลตั้งแต่การออกแบบหน้าจอ ไปจนถึงระบบหลังบ้านและ AI โดยให้ความสำคัญกับความเข้าใจง่ายและการใช้งานจริง</span>
+        </p>
+        <div class="hero-actions" data-reveal>
+          <a class="button button-primary" href="#projects"><span data-i18n="viewProjects">ดูผลงาน</span> <span aria-hidden="true">↘</span></a>
+          <a class="button button-resume" href="assets/resume/nichanan-namwong-resume.pdf" download><span data-i18n="downloadResume">ดาวน์โหลดเรซูเม่</span> <span aria-hidden="true">↓</span></a>
+          <a class="button button-ghost" href="#contact" data-i18n="internContact">ติดต่อเรื่องฝึกงาน</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel" data-reveal aria-label="ข้อมูลโดยสรุป">
+        <div class="hero-photo-frame">
+          <img src="assets/profile/prim-home.png" alt="Prim Nichanan Namwong" width="1122" height="1402">
+          <span class="hero-orbit-tag tag-code">CODE</span>
+          <span class="hero-orbit-tag tag-ai">AI</span>
+          <span class="hero-orbit-tag tag-ux">UX</span>
+        </div>
+        <div class="availability"><span></span> <b data-i18n="available">พร้อมรับโอกาสฝึกงาน</b></div>
+        <dl class="quick-facts">
+          <div><dt>Based in</dt><dd>Bangkok, Thailand</dd></div>
+          <div><dt>Languages</dt><dd>Thai / English</dd></div>
+          <div><dt>Focus</dt><dd>Web · AI · Product Design</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="aboutTitle">
+      <div class="section-heading" data-reveal>
+        <p class="section-index" data-i18n="aboutIndex">01 / เกี่ยวกับฉัน</p>
+        <h2 id="aboutTitle">คิดเป็นระบบ<br>ออกแบบเพื่อคนใช้จริง</h2>
+      </div>
+      <div class="about-content" data-reveal>
+        <p class="about-kicker" data-i18n="aboutKicker">คิดแบบนักพัฒนา · ออกแบบโดยเข้าใจผู้ใช้</p>
+        <p class="about-lead">
+          <span data-i18n="aboutLead">สวัสดีค่ะ ชื่อพริ้ม—นิชนันท์ นามวงศ์ เป็นนักศึกษาวิศวกรรมคอมพิวเตอร์ที่สนใจทั้งการออกแบบและพัฒนาผลิตภัณฑ์ดิจิทัล</span>
+        </p>
+        <p class="about-copy">
+          <span data-i18n="aboutCopy">พริ้มชอบนำ UX/UI, Frontend, Backend และ AI มาทำงานร่วมกัน สนุกกับการเรียนรู้เทคโนโลยีใหม่และแก้ปัญหาอย่างเป็นขั้นตอน เป้าหมายคือสร้างงานที่ใช้งานได้จริงและเข้าใจง่าย ตอนนี้กำลังมองหาโอกาสฝึกงาน เพื่อเรียนรู้จากทีมมืออาชีพและพัฒนาทักษะผ่านโปรเจกต์จริง</span>
+        </p>
+        <dl class="profile-facts">
+          <div><dt data-i18n="nicknameLabel">ชื่อเล่น</dt><dd data-i18n="nicknameValue">พริ้ม</dd></div>
+          <div><dt data-i18n="birthdayLabel">วันเกิด</dt><dd data-i18n="birthdayValue">9 พฤษภาคม 2003</dd></div>
+          <div><dt data-i18n="ageLabel">อายุ</dt><dd data-i18n="ageValue">23 ปี</dd></div>
+          <div><dt data-i18n="interestsLabel">สิ่งที่สนใจ</dt><dd>Full Stack, AI, Frontend, UX/UI</dd></div>
+        </dl>
+      </div>
+      <div class="about-gallery" role="group" aria-label="ภาพของ Prim Nichanan">
+        <figure class="about-photo about-photo-closeup" data-reveal>
+          <img src="assets/profile/prim-about-city.png" alt="ภาพถ่าย Prim Nichanan กับวิวกรุงเทพในเวลากลางคืน" width="941" height="1672" loading="lazy">
+          <figcaption><span>01</span> City perspective</figcaption>
+        </figure>
+        <figure class="about-photo about-photo-lifestyle" data-reveal>
+          <img src="assets/profile/prim-about-mirror.png" alt="ภาพถ่าย Prim Nichanan หน้ากระจกในชุดลายดอกไม้" width="941" height="1672" loading="lazy">
+          <figcaption><span>02</span> Personal style</figcaption>
+        </figure>
+        <p class="about-gallery-note" data-reveal><span data-i18n="galleryNote">เรียนรู้ทั้งงานเขียนโค้ด AI<br>และการออกแบบที่เข้าใจผู้ใช้</span></p>
+      </div>
+    </section>
+
+    <section class="section education" id="education" aria-labelledby="educationTitle">
+      <div class="section-heading" data-reveal>
+        <p class="section-index" data-i18n="educationIndex">02 / การศึกษา</p>
+        <h2 id="educationTitle" data-i18n="educationTitle">ประวัติการศึกษา</h2>
+      </div>
+      <div class="education-list">
+        <article class="education-card" data-reveal>
+          <div class="education-icon" aria-hidden="true">SPU</div>
+          <div>
+            <p class="card-kicker">Bachelor’s Degree · Current</p>
+            <h3>มหาวิทยาลัยศรีปทุม</h3>
+            <p>สาขาวิศวกรรมคอมพิวเตอร์</p>
+          </div>
+          <span class="card-meta">Computer Engineering</span>
+        </article>
+        <article class="education-card" data-reveal>
+          <div class="education-icon" aria-hidden="true">DW</div>
+          <div>
+            <p class="card-kicker">Secondary Education</p>
+            <h3>โรงเรียนดงเจนวิทยาคม</h3>
+            <p>แผนการเรียนวิทยาศาสตร์–คณิตศาสตร์</p>
+          </div>
+          <span class="card-meta">Science–Mathematics Program</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills" aria-labelledby="skillsTitle">
+      <div class="section-heading" data-reveal>
+        <p class="section-index" data-i18n="skillsIndex">03 / ทักษะ</p>
+        <h2 id="skillsTitle"><span data-i18n="skillsTitle">ทักษะที่ใช้พัฒนา<br>งานตั้งแต่ต้นจนจบ</span></h2>
+      </div>
+      <div class="skills-intro" data-reveal>
+        <p data-i18n="skillsIntro">รวมทักษะด้านการออกแบบหน้าจอ การพัฒนาเว็บ ระบบหลังบ้าน AI ฐานข้อมูล และการนำระบบขึ้นใช้งาน โดยแสดงระดับความถนัดตามประสบการณ์ปัจจุบัน</p>
+        <div class="skill-legend"><span></span> <b data-i18n="skillsLegend">43 เทคโนโลยีและแนวทางการทำงาน · แบ่งตามประสบการณ์</b></div>
+      </div>
+      <div class="skill-accordions" id="skillAccordions"></div>
+    </section>
+
+    <section class="section certificates" id="certificates" aria-labelledby="certificatesTitle">
+      <div class="section-heading" data-reveal>
+        <p class="section-index">04 / Certificates</p>
+        <h2 id="certificatesTitle">Certificates &amp;<br>achievements</h2>
+      </div>
+      <div class="certificate-copy" data-reveal>
+        <p>ใบรับรองด้าน IoT, UX/UI และ Frontend ที่สะท้อนการเรียนรู้ทั้งการออกแบบประสบการณ์ผู้ใช้และการพัฒนาระบบ</p>
+        <span class="certificate-note">3 certificates · click to view full size</span>
+      </div>
+      <ul class="certificate-grid">
+        <li class="certificate-card certificate-card-portrait">
+          <a href="assets/certificates/huawei-hcia-iot.png" target="_blank" rel="noopener" aria-label="เปิดใบรับรอง HCIA-IoT V3.0 Course ขนาดเต็ม">
+            <figure>
+              <img src="assets/certificates/huawei-hcia-iot.png" alt="ใบรับรอง Huawei ICT Academy หลักสูตร HCIA-IoT V3.0 ของ Nichanan Namwong" width="838" height="1182" loading="lazy">
+              <figcaption><span>Huawei ICT Academy</span><span aria-hidden="true">↗</span></figcaption>
+            </figure>
+            <div class="certificate-info">
+              <p class="card-kicker">Certificate / 01</p>
+              <h3>HCIA-IoT V3.0 Course</h3>
+              <p>Certificate of Completion · 10 Sep 2025</p>
+            </div>
+          </a>
+        </li>
+
+        <li class="certificate-card">
+          <a href="assets/certificates/google-ux-design.png" target="_blank" rel="noopener" aria-label="เปิดใบรับรอง Google UX Design ขนาดเต็ม">
+            <figure>
+              <img src="assets/certificates/google-ux-design.png" alt="ใบรับรอง Google UX Design Professional Certificate ของ Nichanan Namwong" width="1458" height="972" loading="lazy">
+              <figcaption><span>Google · Coursera</span><span aria-hidden="true">↗</span></figcaption>
+            </figure>
+            <div class="certificate-info">
+              <p class="card-kicker">Professional Certificate / 02</p>
+              <h3>Google UX Design</h3>
+              <p>7-course program · 15 Jan 2025</p>
+            </div>
+          </a>
+        </li>
+
+        <li class="certificate-card">
+          <a href="assets/certificates/meta-front-end.png" target="_blank" rel="noopener" aria-label="เปิดใบรับรอง Meta Front-End Developer ขนาดเต็ม">
+            <figure>
+              <img src="assets/certificates/meta-front-end.png" alt="ใบรับรอง Meta Front-End Developer Professional Certificate ของ Nichanan Namwong" width="1764" height="1328" loading="lazy">
+              <figcaption><span>Meta · Coursera</span><span aria-hidden="true">↗</span></figcaption>
+            </figure>
+            <div class="certificate-info">
+              <p class="card-kicker">Professional Certificate / 03</p>
+              <h3>Meta Front-End Developer</h3>
+              <p>9-course program · 5 Jan 2024</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projectsTitle">
+      <div class="section-heading" data-reveal>
+        <p class="section-index">05 / University Projects</p>
+        <h2 id="projectsTitle">Academic<br>work</h2>
+      </div>
+      <div class="projects-copy" data-reveal>
+        <p>แฟ้มรวบรวมผลงานจากมหาวิทยาลัย กดที่แต่ละโปรเจกต์เพื่อดูโจทย์ กระบวนการ เทคโนโลยี และภาพการทำงานจริง</p>
+      </div>
+
+      <details class="project-folder" data-project-folder>
+        <summary class="project-folder-cover" data-reveal>
+          <span class="project-folder-tab">Project 01</span>
+          <span class="project-folder-number" aria-hidden="true">01</span>
+          <span class="project-folder-main">
+            <span class="project-folder-type">AI Automation · University Project</span>
+            <strong>LINE AI — ผู้ช่วยบันทึกรายรับรายจ่าย</strong>
+            <span>Automation Engineer &amp; AI Integration</span>
+          </span>
+          <span class="project-folder-tech">Make · LINE API · Gemini · Google Sheets</span>
+          <span class="project-folder-action">
+            <span class="folder-open-label">Open folder</span>
+            <span class="folder-close-label">Close folder</span>
+            <span class="project-folder-arrow" aria-hidden="true">↘</span>
+          </span>
+        </summary>
+
+        <div class="project-folder-content">
+      <div class="project-intro" data-folder-item>
+        <p class="card-kicker">Project Overview</p>
+        <p class="project-lead">ระบบอัตโนมัติที่เปลี่ยน LINE ให้เป็นผู้ช่วยการเงิน ผู้ใช้พิมพ์รายการหรือส่งสลิป จากนั้น AI จะอ่าน จัดหมวด และบันทึกลง Google Sheets พร้อมเรียกดูสรุปรายเดือนหรือรายปีได้ทันที</p>
+        <dl class="project-meta">
+          <div><dt>Role</dt><dd>Automation Engineer<br>&amp; AI Integration</dd></div>
+          <div><dt>Deploy</dt><dd>Make Cloud<br>LINE Webhook</dd></div>
+          <div><dt>Data layer</dt><dd>Google Sheets<br>Google Drive</dd></div>
+        </dl>
+      </div>
+
+      <figure class="project-hero-media project-media" data-folder-item>
+        <img src="assets/projects/line-ai/workflow.png" alt="ภาพ Make workflow ที่เชื่อม LINE, Gemini, Google Sheets และ Google Drive" width="1920" height="1077" loading="lazy">
+        <figcaption><span>01</span> Make automation workflow</figcaption>
+      </figure>
+
+      <div class="project-story">
+        <article class="project-problem" data-folder-item>
+          <p class="card-kicker">Problem</p>
+          <h3>ลดขั้นตอนการจดรายจ่ายและการพิมพ์ข้อมูลจากสลิปซ้ำ</h3>
+          <p>การบันทึกด้วยตนเองใช้หลายขั้นตอนและทำให้ข้อมูลกระจัดกระจาย จึงออกแบบให้ LINE เป็นจุดเริ่มต้นเดียวสำหรับทั้งข้อความและรูปภาพ</p>
+        </article>
+
+        <article class="project-process" data-folder-item>
+          <p class="card-kicker">Process &amp; Solution</p>
+          <ol>
+            <li><span>01</span><div><strong>รับข้อมูลผ่าน LINE</strong><p>รองรับข้อความภาษาพูดและภาพสลิปในช่องทางที่ผู้ใช้คุ้นเคย</p></div></li>
+            <li><span>02</span><div><strong>ส่งเข้า Make workflow</strong><p>Webhook แยกเส้นทางตามชนิดข้อมูลและควบคุมลำดับการทำงาน</p></div></li>
+            <li><span>03</span><div><strong>วิเคราะห์ด้วย Gemini</strong><p>อ่านข้อความ ดึงยอด ร้านค้า วันที่ และจัดหมวดค่าใช้จ่ายเป็นข้อมูลมาตรฐาน</p></div></li>
+            <li><span>04</span><div><strong>จัดเก็บและตอบกลับ</strong><p>บันทึกข้อมูลลง Google Sheets เก็บไฟล์ใน Google Drive และส่งผลยืนยันกลับ LINE</p></div></li>
+          </ol>
+        </article>
+      </div>
+
+      <div class="project-stack" data-folder-item>
+        <p class="card-kicker">Architecture &amp; Technology</p>
+        <ul class="project-tags">
+          <li>Make (Integromat)</li>
+          <li>LINE Messaging API</li>
+          <li>Google Gemini</li>
+          <li>Google Sheets</li>
+          <li>Google Drive</li>
+          <li>Webhook</li>
+        </ul>
+      </div>
+
+      <div class="project-contribution" data-folder-item>
+        <p class="card-kicker">My Contribution</p>
+        <p>ออกแบบโครงสร้าง automation และเส้นทาง Webhook, เชื่อม LINE Messaging API กับ Make, กำหนดรูปแบบข้อมูลที่ Gemini ต้องส่งกลับ และจัดระเบียบข้อมูลสำหรับบันทึกลง Google Sheets รวมถึงออกแบบข้อความยืนยันและกรณีแจ้งเตือนเมื่อข้อมูลจากสลิปไม่ชัดเจน</p>
+      </div>
+
+      <div class="project-capabilities" data-folder-item>
+        <div>
+          <p class="card-kicker">Key Capabilities</p>
+          <ul>
+            <li>บันทึกรายการด้วยภาษาพูด</li>
+            <li>อ่านยอด ร้านค้า และวันที่จากสลิป</li>
+            <li>บันทึกลง Google Sheets อัตโนมัติ</li>
+            <li>สรุปรายเดือนและรายปี</li>
+            <li>เรียงหมวดค่าใช้จ่ายจากมากไปน้อย</li>
+            <li>รองรับภาษาไทยและอังกฤษ</li>
+          </ul>
+        </div>
+        <div>
+          <p class="card-kicker">Challenges</p>
+          <ul>
+            <li>ทำให้สลิปหลายรูปแบบกลายเป็นข้อมูลที่สม่ำเสมอ</li>
+            <li>ตีความภาษาพูดทั้งไทยและอังกฤษ</li>
+            <li>ออกแบบ no-code workflow ให้ตรวจสอบและดูแลต่อได้ง่าย</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-gallery" role="group" aria-label="ภาพการทำงานของ LINE AI">
+        <figure class="project-media project-gallery-account" data-folder-item>
+          <img src="assets/projects/line-ai/line-account.png" alt="หน้าโปรไฟล์ LINE Official Account ของระบบ ECMS" width="1290" height="2796" loading="lazy">
+          <figcaption><span>02</span> LINE entry point</figcaption>
+        </figure>
+        <figure class="project-media project-gallery-message" data-folder-item>
+          <img src="assets/projects/line-ai/text-entry.png" alt="ตัวอย่างพิมพ์รายการค่าอาหารด้วยภาษาพูดใน LINE" width="1290" height="510" loading="lazy">
+          <figcaption><span>03</span> Natural-language input</figcaption>
+        </figure>
+        <figure class="project-media project-gallery-result" data-folder-item>
+          <img src="assets/projects/line-ai/receipt-result.png" alt="ตัวอย่าง Gemini อ่านสลิปและส่งข้อมูลให้ผู้ใช้ตรวจสอบก่อนบันทึก" width="1290" height="2796" loading="lazy">
+          <figcaption><span>04</span> Receipt extraction &amp; review</figcaption>
+        </figure>
+        <figure class="project-media project-gallery-warning" data-folder-item>
+          <img src="assets/projects/line-ai/receipt-warning.png" alt="ตัวอย่างระบบแจ้งข้อสังเกตเมื่อ AI ตรวจพบข้อมูลผิดปกติในสลิป" width="1290" height="2796" loading="lazy">
+          <figcaption><span>05</span> AI confidence &amp; warning</figcaption>
+        </figure>
+      </div>
+
+      <div class="project-result" data-folder-item>
+        <p class="card-kicker">Outcome</p>
+        <p>ได้ระบบรายจ่ายแบบสนทนาที่รับทั้งข้อความและสลิป แปลงข้อมูลให้อยู่ในรูปแบบเดียวกัน และจัดเก็บเป็นโครงสร้างสำหรับค้นหาและสรุปผลภายหลัง</p>
+      </div>
+        </div>
+      </details>
+
+      <details class="project-folder project-folder-fitness" data-project-folder>
+        <summary class="project-folder-cover" data-reveal>
+          <span class="project-folder-tab">Project 02</span>
+          <span class="project-folder-number" aria-hidden="true">02</span>
+          <span class="project-folder-main">
+            <span class="project-folder-type">UX/UI Case Study · Health Tech</span>
+            <strong>Fitness Coach — แอปแนะนำการออกกำลังกายตามสุขภาพ</strong>
+            <span>UX/UI Designer &amp; Product Researcher</span>
+          </span>
+          <span class="project-folder-tech">Figma · Persona · Empathy Map · Prototype</span>
+          <span class="project-folder-action">
+            <span class="folder-open-label">Open folder</span>
+            <span class="folder-close-label">Close folder</span>
+            <span class="project-folder-arrow" aria-hidden="true">↘</span>
+          </span>
+        </summary>
+
+        <div class="project-folder-content">
+          <div class="project-intro" data-folder-item>
+            <p class="card-kicker">Project Overview</p>
+            <p class="project-lead">แนวคิดแอปผู้ช่วยออกกำลังกายส่วนบุคคลสำหรับผู้ที่ขาดเวลา คำแนะนำ หรือแรงจูงใจ โดยออกแบบประสบการณ์ให้เริ่มต้นง่าย ปรับตามข้อมูลสุขภาพและเป้าหมาย และช่วยให้ผู้ใช้ติดตามความก้าวหน้าได้จากทุกที่</p>
+            <dl class="project-meta">
+              <div><dt>Role</dt><dd>UX/UI Designer<br>&amp; Product Researcher</dd></div>
+              <div><dt>Stage</dt><dd>Concept<br>&amp; Interactive Prototype</dd></div>
+              <div><dt>Tools</dt><dd>Figma<br>UX Research Methods</dd></div>
+            </dl>
+          </div>
+
+          <figure class="project-hero-media project-media" data-folder-item>
+            <img src="assets/projects/fitness-coach/comparative-analysis.png" alt="ภาพ comparative analysis ของหน้าจอแอป Fitness Coach" width="2394" height="1342" loading="lazy">
+            <figcaption><span>01</span> Comparative analysis</figcaption>
+          </figure>
+
+          <div class="project-story">
+            <article class="project-problem fitness-problem" data-folder-item>
+              <p class="card-kicker">Problem</p>
+              <h3>อยากเริ่มออกกำลังกาย แต่ไม่รู้ว่าอะไรเหมาะและปลอดภัยกับตัวเอง</h3>
+              <p>ผู้ใช้จำนวนมากไม่มีเวลาไปยิม ไม่แน่ใจว่าทำท่าถูกหรือไม่ และเลิกกลางทางเมื่อไม่เห็นผล จึงต้องการเส้นทางที่ชัดเจนและปรับให้เข้ากับชีวิตจริง</p>
+            </article>
+
+            <article class="project-process" data-folder-item>
+              <p class="card-kicker">Target Personas</p>
+              <ol>
+                <li><span>01</span><div><strong>คนเวลาน้อย</strong><p>ต้องการโปรแกรมสั้น 10–20 นาทีที่ทำได้ที่บ้าน</p></div></li>
+                <li><span>02</span><div><strong>ผู้เริ่มต้น</strong><p>ไม่รู้ว่าจะเริ่มจากไหนและกังวลเรื่องท่าทาง</p></div></li>
+                <li><span>03</span><div><strong>ผู้ดูแลสุขภาพ</strong><p>ต้องการลดน้ำหนักและติดตามกิจกรรมอย่างต่อเนื่อง</p></div></li>
+                <li><span>04</span><div><strong>ผู้มีข้อจำกัดสุขภาพ</strong><p>ต้องการคำแนะนำที่คำนึงถึงอายุและข้อมูลสุขภาพ</p></div></li>
+              </ol>
+            </article>
+          </div>
+
+          <section class="empathy-section" aria-labelledby="empathyTitle" data-folder-item>
+            <div class="empathy-heading">
+              <p class="card-kicker">Empathy Map</p>
+              <h3 id="empathyTitle">เข้าใจสิ่งที่ผู้ใช้พูด คิด ทำ รู้สึก เห็น และได้ยิน</h3>
+            </div>
+            <div class="empathy-grid">
+              <article><span>Says</span><p>“อยากออกกำลังกาย แต่ไม่รู้จะเริ่มยังไง”</p></article>
+              <article><span>Thinks</span><p>โปรแกรมแบบไหนเหมาะกับอายุ สุขภาพ และเวลาของฉัน?</p></article>
+              <article><span>Does</span><p>ค้นหาคลิปออกกำลังกายและใช้อุปกรณ์ wearable ติดตามสุขภาพ</p></article>
+              <article><span>Feels</span><p>ตื่นเต้นตอนเริ่ม แต่กังวลเรื่องความต่อเนื่องและการบาดเจ็บ</p></article>
+              <article><span>Sees</span><p>เทรนเนอร์มีค่าใช้จ่ายสูง และคนที่ไม่มีแผนอาจทำผิดท่าจนเจ็บ</p></article>
+              <article><span>Hears</span><p>คำแนะนำว่าการทำท่าให้ถูกและไม่หนักเกินไปสำคัญต่อผลลัพธ์</p></article>
+            </div>
+          </section>
+
+          <div class="project-stack" data-folder-item>
+            <p class="card-kicker">Design Focus</p>
+            <ul class="project-tags">
+              <li>Personalized Workout</li>
+              <li>Health Profile</li>
+              <li>Goal Setting</li>
+              <li>Progress Tracking</li>
+              <li>Wearable Concept</li>
+              <li>Motivation &amp; Rewards</li>
+              <li>Figma Prototype</li>
+            </ul>
+          </div>
+
+          <div class="project-contribution" data-folder-item>
+            <p class="card-kicker">My Contribution</p>
+            <p>ศึกษาปัญหาและความต้องการของกลุ่มเป้าหมาย สรุป Persona และ Empathy Map วาง user flow ตั้งแต่ onboarding ถึง dashboard แล้วออกแบบ wireframe, visual interface และ interactive prototype ใน Figma</p>
+          </div>
+
+          <div class="project-capabilities" data-folder-item>
+            <div>
+              <p class="card-kicker">Design Advantages</p>
+              <ul>
+                <li>ปรับโปรแกรมตามอายุ สุขภาพ เวลา และเป้าหมาย</li>
+                <li>ออกกำลังกายที่บ้านได้โดยไม่ต้องใช้อุปกรณ์มาก</li>
+                <li>ติดตามชีพจร น้ำ การนอน และแคลอรีในมุมมองเดียว</li>
+                <li>รองรับตั้งแต่มือใหม่จนถึงผู้ใช้ที่มีประสบการณ์</li>
+              </ul>
+            </div>
+            <div>
+              <p class="card-kicker">Risks &amp; Limitations</p>
+              <ul>
+                <li>คำแนะนำของ AI อาจคลาดเคลื่อนและไม่แทนผู้เชี่ยวชาญสุขภาพ</li>
+                <li>การตรวจท่าทางยังต้องพึ่งข้อมูลหรือเซนเซอร์ที่เหมาะสม</li>
+                <li>ผู้ใช้ที่ไม่คุ้นเทคโนโลยีอาจต้องการขั้นตอนเริ่มต้นที่ง่ายมาก</li>
+                <li>โภชนาการและฟีเจอร์พรีเมียมต้องออกแบบเพิ่มเติมในอนาคต</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="fitness-gallery" role="group" aria-label="ภาพกระบวนการออกแบบ Fitness Coach">
+            <figure class="project-media fitness-gallery-wide" data-folder-item>
+              <img src="assets/projects/fitness-coach/figma-overview.png" alt="ภาพรวมหน้าจอและ user flow ของ Fitness Coach ใน Figma" width="1310" height="822" loading="lazy">
+              <figcaption><span>02</span> Figma workspace &amp; flows</figcaption>
+            </figure>
+            <figure class="project-media" data-folder-item>
+              <img src="assets/projects/fitness-coach/onboarding.png" alt="หน้าจอเริ่มต้น onboarding และ login ของ Fitness Coach" width="1804" height="896" loading="lazy">
+              <figcaption><span>03</span> Onboarding &amp; login</figcaption>
+            </figure>
+            <figure class="project-media" data-folder-item>
+              <img src="assets/projects/fitness-coach/profile-dashboard.png" alt="หน้าจอสมัครสมาชิก ข้อมูลสุขภาพ และ dashboard ของ Fitness Coach" width="1962" height="918" loading="lazy">
+              <figcaption><span>04</span> Health profile &amp; dashboard</figcaption>
+            </figure>
+            <figure class="project-media fitness-gallery-wide" data-folder-item>
+              <img src="assets/projects/fitness-coach/goals.png" alt="หน้าจอเลือกเป้าหมายการออกกำลังกายใน Fitness Coach" width="1412" height="892" loading="lazy">
+              <figcaption><span>05</span> Personalized goal selection</figcaption>
+            </figure>
+          </div>
+
+          <div class="project-result fitness-result" data-folder-item>
+            <p class="card-kicker">Outcome</p>
+            <p>ได้แนวคิดและ interactive prototype ที่เชื่อมการตั้งค่าข้อมูลสุขภาพ การเลือกเป้าหมาย ตารางฝึก และ dashboard ติดตามผลไว้ในประสบการณ์เดียว พร้อมกรอบความเสี่ยงที่ต้องตรวจสอบก่อนพัฒนา AI จริง</p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contactTitle">
+      <div class="contact-heading">
+        <p class="section-index" data-reveal>06 / Contact</p>
+        <h2 id="contactTitle" data-reveal>Let’s create<br><span>something useful.</span></h2>
+        <p data-reveal>พร้อมเรียนรู้ ลงมือทำ และเติบโตไปกับทีม กำลังมองหาโอกาสฝึกงานด้าน Full Stack, AI, Frontend หรือ UX/UI</p>
+        <span class="contact-status" data-reveal>Open for internship · Bangkok</span>
+      </div>
+      <div class="contact-links" data-reveal role="group" aria-label="ช่องทางติดต่อ">
+        <a class="contact-link contact-link-email" href="mailto:nichnanthnamwngs@gmail.com" aria-label="ส่งอีเมลหา Prim ที่ nichnanthnamwngs@gmail.com">
+          <span class="contact-icon"><img src="assets/icons/gmail.svg" alt=""></span>
+          <span class="contact-info"><small>Email</small><strong>nichnanthnamwngs@gmail.com</strong></span>
+          <span class="contact-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="contact-link contact-link-github" href="https://github.com/nichnanthnamwngs-dev" target="_blank" rel="noopener noreferrer" aria-label="เปิด GitHub ของ Prim ชื่อ nichnanthnamwngs-dev">
+          <span class="contact-icon"><img src="assets/icons/github.svg" alt=""></span>
+          <span class="contact-info"><small>GitHub</small><strong>nichnanthnamwngs-dev</strong></span>
+          <span class="contact-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="contact-link" href="https://www.instagram.com/pxxm9ncn?stkn=MXR5eHl1MmlqM3UxYw%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="เปิด Instagram ของ Prim">
+          <span class="contact-icon"><img src="assets/icons/instagram.svg" alt=""></span>
+          <span class="contact-info"><small>Instagram</small><strong>@pxxm9ncn</strong></span>
+          <span class="contact-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="contact-link" href="https://www.facebook.com/share/19KgjEPr5E/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="เปิด Facebook ของ Prim">
+          <span class="contact-icon"><img src="assets/icons/facebook.svg" alt=""></span>
+          <span class="contact-info"><small>Facebook</small><strong>Prim Nichanan</strong></span>
+          <span class="contact-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="contact-link" href="https://line.me/ti/p/~Primprao123" target="_blank" rel="noopener noreferrer" aria-label="เพิ่มเพื่อน LINE ไอดี Primprao123">
+          <span class="contact-icon"><img src="assets/icons/line.svg" alt=""></span>
+          <span class="contact-info"><small>LINE</small><strong>Primprao123</strong></span>
+          <span class="contact-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="contact-link" href="tel:0639811982" aria-label="โทรหา Prim ที่หมายเลข 063 981 1982">
+          <span class="contact-icon"><img src="assets/icons/phone.svg" alt=""></span>
+          <span class="contact-info"><small>Telephone</small><strong>063&#8209;981&#8209;1982</strong></span>
+          <span class="contact-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span data-i18n="brandName">พริ้ม นิชนันท์</span>
+    <span>Bangkok, Thailand · 2026</span>
+  </footer>
+
+  <script src="assets/vendor/gsap/gsap.min.js"></script>
+  <script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/skills-data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

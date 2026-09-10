@@ -1,0 +1,51 @@
+window.PORTFOLIO_SKILLS = {
+    frontend: [
+      ['HTML', 'HTML5', '#e34f26', 'Semantic HTML, form, SEO structure และโครงสร้างหน้าเว็บที่เข้าถึงได้', 92],
+      ['CSS', 'CSS3', '#1572b6', 'Responsive layout, Flexbox, Grid, custom properties และ mobile-first design', 90],
+      ['JS', 'JavaScript', '#b89b00', 'DOM, events, async/await, modules, fetch และการพัฒนาเว็บแบบ interactive', 88],
+      ['TS', 'TypeScript', '#3178c6', 'Type-safe application, interface, generic และการลดข้อผิดพลาดในโค้ดขนาดใหญ่', 78],
+      ['React', 'React', '#087ea4', 'Component, props, state, hooks, routing และ reusable UI architecture', 85],
+      ['Next', 'Next.js', '#111111', 'Full-stack React, routing, server rendering, API route และ performance optimization', 78],
+      ['Vue', 'Vue.js', '#42b883', 'Reactive component, composable, routing และการสร้าง single-page application', 68],
+      ['NG', 'Angular', '#dd0031', 'Component-based application, service, dependency injection, form และ routing', 62],
+      ['TW', 'Tailwind CSS', '#0f9faf', 'Utility-first styling, responsive variants และการสร้าง design system อย่างรวดเร็ว', 86],
+      ['GSAP', 'GSAP', '#6cae25', 'Timeline, tween, ScrollTrigger, micro-interaction และ motion ที่รองรับ reduced motion', 82],
+      ['UX', 'UX/UI & Figma', '#a259ff', 'User flow, wireframe, prototype, component, design token และ developer handoff', 84],
+      ['A11y', 'Accessibility', '#3659b7', 'Keyboard navigation, semantic structure, ARIA, focus state และ readable contrast', 76]
+    ],
+    backend: [
+      ['Node', 'Node.js', '#43853d', 'JavaScript runtime สำหรับ server, file processing, automation และ web service', 84],
+      ['EX', 'Express.js', '#303030', 'Routing, middleware, validation, error handling และ REST API service', 82],
+      ['PY', 'Python', '#3776ab', 'Backend scripting, data processing, automation และพื้นฐานงาน AI/ML', 80],
+      ['FA', 'FastAPI', '#009688', 'Python API แบบ typed, validation, async endpoint และเอกสาร OpenAPI อัตโนมัติ', 76],
+      ['DJ', 'Django', '#0c4b33', 'Python web framework, ORM, admin, authentication และ application structure', 68],
+      ['JV', 'Java & Spring Boot', '#b07219', 'Object-oriented backend, REST service, dependency injection และ enterprise application', 72],
+      ['PHP', 'PHP & Laravel', '#777bb4', 'MVC web application, routing, Eloquent ORM, validation และ authentication', 66],
+      ['NET', 'C# & .NET', '#512bd4', 'Typed backend, Web API, Entity Framework และ service-oriented application', 62],
+      ['GO', 'Go', '#00add8', 'Concurrent backend service, lightweight API และระบบที่เน้นประสิทธิภาพ', 60],
+      ['REST', 'REST API', '#d35400', 'Resource design, HTTP method, status code, pagination, filtering และ versioning', 88],
+      ['GQL', 'GraphQL', '#e10098', 'Schema, query, mutation, resolver และการเลือกข้อมูลตามความต้องการของ client', 68],
+      ['AUTH', 'Authentication & Security', '#6d4c9a', 'Session, JWT, OAuth, role-based access, hashing, CORS และ input validation', 76],
+      ['WS', 'WebSocket', '#35495e', 'Real-time update, notification, chat และการสื่อสารสองทางระหว่าง client กับ server', 68],
+      ['AI', 'AI API Integration', '#10a37f', 'เชื่อมต่อโมเดล AI, prompt workflow, structured output, embeddings และ chatbot feature', 86],
+      ['ML', 'AI / Machine Learning', '#f7931e', 'เตรียมข้อมูล สร้างโมเดลพื้นฐาน ประเมินผล และนำโมเดลไปใช้ใน application', 72],
+      ['RAG', 'LLM, RAG & Vector Data', '#7b61ff', 'Prompt engineering, embedding, vector search, retrieval และ AI assistant workflow', 80],
+      ['DOC', 'Postman & OpenAPI', '#ff6c37', 'ทดสอบ endpoint, environment, collection และจัดทำ API documentation', 90]
+    ],
+    platform: [
+      ['SQL', 'SQL', '#336791', 'ออกแบบ query, join, aggregate, transaction และจัดการ relational data', 84],
+      ['PG', 'PostgreSQL / MySQL', '#3b6e98', 'Schema design, relation, index, constraint, migration และ database operation', 82],
+      ['MDB', 'MongoDB', '#47a248', 'Document database, collection, aggregation และข้อมูลที่มีโครงสร้างยืดหยุ่น', 76],
+      ['RDS', 'Redis', '#d82c20', 'Caching, session, rate limiting, queue และข้อมูลที่ต้องเข้าถึงอย่างรวดเร็ว', 64],
+      ['ORM', 'ORM & Data Modeling', '#59666c', 'Entity relationship, Prisma, Sequelize, migration และการเชื่อม application กับ database', 78],
+      ['GIT', 'Git & GitHub', '#24292f', 'Branch, commit, merge, pull request, code review และการทำงานร่วมกันเป็นทีม', 92],
+      ['TEST', 'Testing', '#8a6d1d', 'Unit, integration, end-to-end, API testing และการป้องกัน regression', 74],
+      ['DKR', 'Docker', '#2496ed', 'Container, image, volume, network และ environment ที่เหมือนกันทุกเครื่อง', 70],
+      ['LNX', 'Linux & Command Line', '#333333', 'จัดการไฟล์ process permission environment และ server workflow ผ่าน command line', 72],
+      ['NGX', 'Nginx & Reverse Proxy', '#009639', 'Static hosting, reverse proxy, routing, compression และ HTTPS termination', 62],
+      ['CI', 'CI/CD', '#2088ff', 'Automated test, build, preview และ deployment pipeline ผ่าน GitHub Actions', 68],
+      ['CLD', 'Cloud Deployment', '#5b52a3', 'Deploy บน Vercel, Netlify หรือ cloud platform พร้อม environment variables', 74],
+      ['DNS', 'Domain, DNS & HTTPS', '#f38020', 'Custom domain, DNS record, SSL/TLS, redirect, CDN และ production configuration', 66],
+      ['OBS', 'Monitoring & Performance', '#b64b8c', 'Log, error tracking, uptime, Core Web Vitals, caching และ performance audit', 64]
+    ]
+};

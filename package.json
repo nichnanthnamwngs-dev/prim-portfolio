@@ -1,0 +1,16 @@
+{
+  "name": "prim-nichanan-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Student developer portfolio for Nichanan Namwong",
+  "scripts": {
+    "dev": "node scripts/dev-server.mjs",
+    "start": "node scripts/dev-server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0"
+  }
+}
